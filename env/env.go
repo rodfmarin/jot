@@ -8,6 +8,7 @@ import (
 
 const ObsidianVaultPathEnv = "OBSIDIAN_VAULT_PATH"
 
+// CheckJotEnv checks the environment variables required for Jot to function correctly.
 func CheckJotEnv() error {
 	// Calls the other check functions to make sure OK
 	if err := checkVaultEnv(); err != nil {
@@ -16,6 +17,7 @@ func CheckJotEnv() error {
 	return nil
 }
 
+// checkVaultEnv checks if the Obsidian Vault environment variable is set.
 func checkVaultEnv() error {
 	// Checks if Obsidian Vault Env Path is set
 	if _, ok := os.LookupEnv(ObsidianVaultPathEnv); !ok {

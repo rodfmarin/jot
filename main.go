@@ -38,6 +38,7 @@ func main() {
 	}
 }
 
+// checkArgs checks if the command line arguments are valid
 func checkArgs(args []string) error {
 	if len(args) == 0 {
 		return fmt.Errorf("no note provided. please provide a note to write to the daily note file")

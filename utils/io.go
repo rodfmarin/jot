@@ -11,6 +11,7 @@ import (
 // NoteExtension TODO: Make extension configurable
 const NoteExtension = ".md"
 
+// DailyNote represents a daily note file
 type DailyNote struct {
 	// Path to the daily note file
 	Path string
@@ -18,6 +19,7 @@ type DailyNote struct {
 	Date string
 }
 
+// Read reads the content of the daily note file
 func (f *DailyNote) Read() (string, error) {
 	// Read the daily note file and return its content
 	// If the file does not exist, return an error
@@ -34,6 +36,7 @@ func (f *DailyNote) Read() (string, error) {
 	return string(content), nil
 }
 
+// Write writes content to the daily note file
 func (f *DailyNote) Write(content string) error {
 	// Write content to the daily note file
 	// If the file does not exist, create it
@@ -65,6 +68,7 @@ func (f *DailyNote) Write(content string) error {
 
 }
 
+// NewDailyNote creates a new DailyNote instance with the given date
 func NewDailyNote(date string) (*DailyNote, error) {
 	// Create a new DailyNote instance with the given date
 	if date == "" {
