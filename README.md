@@ -10,7 +10,7 @@ Jot (not to be confused with unix utility [jot](http://man.freebsd.org/cgi/man.c
 
 ## Usage
 
-1. **Set thenvironment Variable**
+1. **Set the environment Variable**
    
    Before using Jot, set the `OBSIDIAN_VAULT_PATH` environment variable to the full path where your Obsidian daily notes are stored:
    
