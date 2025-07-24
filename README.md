@@ -66,7 +66,7 @@ Jot (not to be confused with unix utility [jot](http://man.freebsd.org/cgi/man.c
     ```
 
 ## Requirements
-- Go 1.18 or newer
+- Go 1.24 or newer
 - Obsidian (for daily note integration), or any path where you want to keep .md note files!
 
 ## License
