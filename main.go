@@ -25,9 +25,6 @@ func main() {
 	// Create a flat string from the command line args/strings
 	note := strings.Join(args, " ")
 
-	fmt.Println(note)
-	fmt.Println(utils.GetObsidianDate())
-
 	// Create a daily note file
 	date := utils.GetObsidianDate()
 	dailyNote, err := utils.NewDailyNote(date)
