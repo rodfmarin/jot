@@ -54,7 +54,7 @@ Jot (not to be confused with unix utility [jot](http://man.freebsd.org/cgi/man.c
    mv jot /usr/local/bin/
    ```
 5. (Optional) Add an alias to your shell configuration file (e.g., `.bashrc`, `.zshrc`); call it something else if you 
-   Wish to continue using the original `jot` command:
+   wish to continue using the original `jot` command:
    ```bash
    echo 'alias jot="/path/to/jot"' >> ~/.bashrc
    source ~/.bashrc
